@@ -41,7 +41,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    height: 110px;
+    height: 90px;
 }
 
 /* Navigation Menu - Mobil */
@@ -110,7 +110,10 @@ ul li {
     right: 25px;
     font-size: 36px;
 }
-
+/* Styling for vores Menu knap.
+ * Vi ændrer på vores cursor (til pointer) ved hover.
+ * Position fixed inkl. top og left position gør at vores menu er fikseret til venstre hjørne i toppen og ikke rør på sig ved scroll.
+ */
 .openbtn {
     font-size: 25px;
     cursor: pointer;
@@ -124,6 +127,11 @@ ul li {
 }
 
 /* Content (information + video) section */
+/* Vi giver vores felt et grid-area som vi bruger i vores system.
+ * Vi rykker vores content 10% ind i elementet fra elle sider for af skabe noget whitespace.
+ * Overflow auto tilføjer os vores scroll-effekt på dette element.
+ * Vi har sat vores margin-left i minus, så indholdet flugter bedre med sidemenuen når vi skalerer op og ned.
+ */
 #grid-item-c {
     background-color: #FFFFFF;
     grid-area: c;
@@ -132,18 +140,26 @@ ul li {
     margin-left: -70px;
 }
 
+/* Vi skaber whitespace imellem vores content og dens boks-shadow så det ikke virker så sammenpresset.
+ * Vi giver noget margin i bunden så næste content-post rykkes lidt ned fra vores shadow der opdeler filmene.
+ */
 .infodiv {
     margin-bottom: 20px;
     padding-bottom: 20px;
     box-shadow: 0 5px 4px -4px black;
 }
 
+/* Vi skaber lidt luft imellem vores heading og p elementer */
 .title, .year, .rating, .description {
     margin-bottom: 10px;
 }
 
+/* position relative betyder at vi pladserer vores element relativt til dets normale pladsering.
+ * Vi skaber lidt padding i top og bund, sætter en højde og overflow hidden.
+ * Disse stylings gør at vores video-content forbliver inden for dette element og ikke lægger sig oven på alt andet på siden.
+ */
 .videoDiv {
-     position: relative;
+    position: relative;
      padding-bottom: 56.25%;
      padding-top: 30px;
      height: 0;
@@ -151,6 +167,9 @@ ul li {
      margin-bottom: 50px;
  }
 
+/* Position absolute pladserer elementet relativt til det parent-element vores stylede element befinder sig i. (videoDiv)
+ * Vi sætter det øverst i venstre hjørne og videoen får lov til at fylde 100% både i højde og width.
+ */
 .videoDiv iframe {
     position: absolute;
     top: 0;
@@ -160,10 +179,15 @@ ul li {
 }
 
 /* Footer */
+/* Vi giver vores felt et grid-area som vi bruger i vores system.
+ *
+*/
 #grid-item-d {
     background-color: #810D00;
-    grid-area: d;
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    grid-area: d;
     padding-top: 10px;
 }
 
