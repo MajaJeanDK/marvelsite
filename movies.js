@@ -128,12 +128,12 @@ for (let i = 0; i < jsonMovies.movie.length; i++) {
 
             let videoEmbedIframe = document.createElement("iframe");
             // vores src har vores embed-url samt vores youtubeId fra vores json-movie-objekt
-            videoEmbedIframe.setAttribute("src", youtube.generateEmbedUrl(movie.YoutubeId))
-            videoEmbedIframe.setAttribute("allowFullscreen", '')
+            videoEmbedIframe.setAttribute("src", youtube.generateEmbedUrl(movie.YoutubeId));
+            videoEmbedIframe.setAttribute("allowFullscreen", '');
 
             // kodedel for min navigations-menu
             const liNav = document.createElement("li");
-            const aNav = document.createElement("a")
+            const aNav = document.createElement("a");
             // Vi giver hvert anchor-element en source til hvert movie.Title-objekt.
             aNav.setAttribute("href", '#' + movie.Title);
 
