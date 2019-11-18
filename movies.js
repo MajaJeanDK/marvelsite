@@ -61,7 +61,7 @@ let jsonMovies = { //JavaScript variabel for vores film-liste
 
 
 // mit omdbapi.com-link når jeg søger på titlen i URL'en. inkl. min API nøgle.
-let url = "http://www.omdbapi.com/?apikey=f2c0c816&t=";
+let url = "https://www.omdbapi.com/?apikey=f2c0c816&t=";
 
 // Film: Captain America: The First Avenger, Captain Marvel, Iron Man, Iron Man 2, Thor, The Incredible Hulk
 //let movies = ["Captain%20America%20-%20The%20First%20Avenger", "Captain%20Marvel", "Iron%20Man", "Iron%20Man%202", "thor", "The%20Incredible%20Hulk"]
@@ -76,7 +76,7 @@ let youtube = {
 
     /** Forventer et argument der enten er en youtube URL eller et id, og returnerer id'et tilbage. */
     getIdFromUrl: function (videoIdOrUrl) {
-        if (videoIdOrUrl.indexOf('http') === 0) {
+        if (videoIdOrUrl.indexOf('https') === 0) {
             return videoIdOrUrl.split('v=')[1];
         } else {
             return videoIdOrUrl;
