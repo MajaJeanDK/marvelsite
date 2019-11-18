@@ -129,7 +129,7 @@ for (let i = 0; i < jsonMovies.movie.length; i++) {
             let videoEmbedIframe = document.createElement("iframe");
             // vores src har vores embed-url samt vores youtubeId fra vores json-movie-objekt
             videoEmbedIframe.setAttribute("src", youtube.generateEmbedUrl(movie.YoutubeId))
-            videoEmbedIframe.setAttribute("allowfullscreen", '')
+            videoEmbedIframe.setAttribute("allowFullscreen", '')
 
             // kodedel for min navigations-menu
             const liNav = document.createElement("li");
