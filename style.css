@@ -180,7 +180,7 @@ ul li {
 
 /* Footer */
 /* Vi giver vores felt et grid-area som vi bruger i vores system.
- *
+ * Vi sætter width til 100% så den altid fylder hele bredden.
 */
 #grid-item-d {
     background-color: #810D00;
@@ -199,6 +199,7 @@ ul li {
 
 
 /* ############################ TABLET ############################ */
+/* media queries og deres breakpoints: vi laver de nødvendige ændringer i designet ved tablet og desktop-størrelse.*/
 @media only screen and (min-width: 600px) {
     /* Header */
     #headerimg {
@@ -227,14 +228,14 @@ ul li {
 }
 
 /* Nav bar desktop */
-/* fjerner synligheden af toggle-menu + lukke-knap */
+/* Fjerner synligheden af toggle-menu + lukke-knap */
 .closebtn,
 .openbtn {
     visibility: hidden;
 }
 
+/* Styling for vores røde sidemenu på desktop-størrelsen */
 .sidepanel {
-grid-area: b;
 width: 200px;
 background-color: #A71202;
 box-shadow: 10px 0 15px -10px black;
@@ -245,6 +246,7 @@ ul {
 margin-top: 130px;
 }
 
+/* Vi fjerner alt default liste-styling med list-style-type none. */
 ul li {
 list-style-type: none;
 border-bottom: #810D00 1px solid;
@@ -253,9 +255,8 @@ border-bottom: #810D00 1px solid;
 .sidepanel a {
 font-size: 20px;
 color: beige;
-transition: 0s;
 }
-
+/* Vi laver en hover-effekt ved vores menupunkter */
 .sidepanel a:hover {
 font-weight: bold;
 color: #111111;
@@ -270,6 +271,7 @@ background-color: #FFFFFF;
 .infodiv {
     margin-bottom: 20px;
     padding-bottom: 15px;
+}
 
 .videoDiv {
     margin-bottom: 0;
