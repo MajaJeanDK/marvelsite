@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Lag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 640 250" style="enable-background:new 0 0 640 250;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#810D00;}
+	.st1{fill:#A31201;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st6{fill:#FFFAFA;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<rect x="0.3" class="st0" width="640" height="250"/>
+<rect x="12.5" y="-63.5" class="st0" width="18" height="22"/>
+<rect x="48" y="-63" class="st1" width="18" height="22"/>
+<rect x="79" y="-63" class="st2" width="18" height="22"/>
+<text transform="matrix(1 0 0 1 6.79 -76.5796)" style="font-family:'MyriadPro-Regular'; font-size:7px;">810D00</text>
+<text transform="matrix(1 0 0 1 46.7061 -79.1011)" style="font-family:'MyriadPro-Regular'; font-size:7px;">A71202</text>
+<text transform="matrix(1 0 0 1 80.7393 -80.3613)" style="font-family:'MyriadPro-Regular'; font-size:7px;">FFFFFF</text>
+<radialGradient id="SVGID_1_" cx="320" cy="123" r="228.9159" gradientTransform="matrix(1 0 0 0.5 0 61.5)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#B61202"/>
+	<stop  offset="0.4323" style="stop-color:#B41202"/>
+	<stop  offset="0.6403" style="stop-color:#AC1102"/>
+	<stop  offset="0.8004" style="stop-color:#9F1001"/>
+	<stop  offset="0.9351" style="stop-color:#8D0E00"/>
+	<stop  offset="1" style="stop-color:#810D00"/>
+</radialGradient>
+<ellipse class="st3" cx="320" cy="123" rx="303" ry="114"/>
+<g id="marvel">
+	<rect x="67.7" y="22" class="st4" width="505.3" height="207"/>
+	<path class="st5" d="M83.5,209.4V39.7h41l13.1,74.6l14.9-74.6h37.3v152.9L214,39.7h39.2l22.4,160.3V39.7H324c0,0,20.5,9.3,28,28
+		l-5.6-28h29.8l14.9,91.4L408,39.7h83.9v35.4h-26.1v31.7h26.1v35.4h-26.1v33.6h26.1v33.6h-57.8V47.2l-24.2,162.2h-35.4l-18.6-110
+		c0,0-1.9,31.7-18.6,44.7l20.5,65.3h-29.8L311,155.3h-3.7v54.1h-59.7l-1.9-16.8h-24.2l-3.7,16.8H160V146l-14.9,63.4h-14.9L115.2,146
+		v63.4"/>
+	<polygon class="st6" points="501.2,39.7 531,39.7 531,175.8 555.2,175.8 555.2,209.4 501.2,209.4 	"/>
+	<polygon class="st1" points="226.2,160 233.6,109.6 241.1,160 	"/>
+	<path class="st1" d="M308.2,120.8V70.5c0,0,16.8,5.6,16.8,24.2S308.2,120.8,308.2,120.8z"/>
+</g>
+</svg>

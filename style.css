@@ -1,0 +1,274 @@
+/* ############## MOBIL STYLING ############## */
+/* Global */
+/* Vi fjerner alle default margin og padding så vi arbejder ud fra et nulstillet design. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+/* Vi laver vores grid-gitter som er bygget op af kolonner og rækker.
+ * Grid-systemet bygges op vha. grid-areas.
+ * Viewport width og height for vores grid-gitter skal fylde hele vinduets bredde og højde
+ */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 kolonner */
+    grid-template-rows: 20% 75% 5% ; /* 3 rows */
+    grid-template-areas:
+            "a a a a a"
+            "b c c c c"
+            "d d d d d";
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+/* Vi giver vores felt et grid-area som vi bruger i vores system.
+ * Position sticky inkl. top position gør at vores header klistrer til toppen af vinduet og står fast i vinduet når vi scroller.
+ */
+#grid-item-a {
+    grid-area: a;
+    position: sticky;
+    top: 0;
+    background-color: #810D00;
+    box-shadow: 0 10px 15px -13px black; /* right, bottom, blur radius, shadow spread, color */
+}
+
+/* Display block samt med de to margin auto centrerer vores billede i vores header.  */
+#headerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 110px;
+}
+
+/* Navigation Menu - Mobil */
+/* Vi giver vores felt et grid-area som vi bruger i vores system.
+ * Position sticky inkl. top og left position gør at vores header klistrer til toppen og venstre af vinduet og står fast i vinduet når vi scroller.
+ * Vi sætter z-index til 9999 så vi sætter dette element på plads 9999 og dermed lægger ovenpå elementer der ikke har en højere z-index end 9999.
+ */
+#grid-item-b {
+    grid-area: b;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+/* Sidepanel's width er pr. default 0 og ændrer sig i takt med de funktioner vi har sat i vores javascript.
+ * Disse funktioner tilknyttes vores onClick-attributter i HTMLen.
+ * Position fixed inkl. top og left position gør at vores menu er fikseret til venstre hjørne i toppen og ikke rør på sig ved scroll.
+ * Height 100% betyder at menuen fylder hele vidnuets højde.
+ * Vi sætter z-index til 1 så vi sætter dette element på plads 1 og dermed lægger under elementer der har en højere z-index end 1.
+ * Dette gør vi for at menu-knappen ligger bagved den menu der kommer fra ved onClick="openNav()".
+ * Overflow-x hidden betyder at vi skjuler menuens indhold pr. default.
+ * Transition 0.5s laver en kort transition når der klikkes på menuens knap.
+ */
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1; /* så menu-knappen ligger bagved menuen */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+    box-shadow: 10px 0 15px -10px black;
+}
+
+/* Vi giver padding på selve a-elementet for at rykke det ind fra siderne (giver luft).
+ * Vi fjerner alt styling med text-decoration none, og dermed har teksten ikke vores default link-styling.
+ * Display block lægger alle a elementer under hinanden istedet for ved siden af.
+ */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: beige;
+    display: block;
+}
+
+/* Nav links styling */
+/* Vi fjerner alt default liste-styling med list-style-type none.
+ * Vi laver lidt luft på margin-top og -bottom for hvert li-element i vores liste.
+ */
+ul li {
+    list-style-type: none;
+    margin: 20px 0;
+    border-bottom: #818181 1px solid;
+}
+
+/* Position absolute pladserer elementet relativt til det parent-element vores stylede element befinder sig i.
+ * Elementet er vores "X"-knap som er fikseret i toppen med rykket 25px ind fra parent-elementets højre side.
+ */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #111111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Content (information + video) section */
+#grid-item-c {
+    background-color: #FFFFFF;
+    grid-area: c;
+    padding: 10%;
+    overflow: auto;
+    margin-left: -70px;
+}
+
+.infodiv {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 4px -4px black;
+}
+
+.title, .year, .rating, .description {
+    margin-bottom: 10px;
+}
+
+.videoDiv {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+     margin-bottom: 50px;
+ }
+
+.videoDiv iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+#grid-item-d {
+    background-color: #810D00;
+    grid-area: d;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#footertext {
+    font-size: 12px;
+    margin-left: 2%;
+    color: #FFFFFF;
+}
+
+
+/* ############################ TABLET ############################ */
+@media only screen and (min-width: 600px) {
+    /* Header */
+    #headerimg {
+        height: 130px;
+        margin-top: 8px;
+    }
+
+    /*content (information + video) section */
+    #grid-item-c {
+        margin-left: -130px;
+    }
+
+    /* Footer */
+    #footertext {
+        text-align: right;
+        margin-right: 2%;
+        font-size: 14px;
+    }
+} /* media query tablet end */
+
+/* ############################ DESKTOP ############################ */
+@media only screen and (min-width: 768px) {
+/* Header */
+#headerimg {
+    height: 130px;
+}
+
+/* Nav bar desktop */
+/* fjerner synligheden af toggle-menu + lukke-knap */
+.closebtn,
+.openbtn {
+    visibility: hidden;
+}
+
+.sidepanel {
+grid-area: b;
+width: 200px;
+background-color: #A71202;
+box-shadow: 10px 0 15px -10px black;
+}
+
+/* Nav links styling */
+ul {
+margin-top: 130px;
+}
+
+ul li {
+list-style-type: none;
+border-bottom: #810D00 1px solid;
+}
+
+.sidepanel a {
+font-size: 16px;
+color: beige;
+transition: 0s;
+}
+
+.sidepanel a:hover {
+font-weight: bold;
+color: #111111;
+background-color: #FFFFFF;
+}
+
+/*Content (information + video) section */
+#grid-item-c {
+    margin-left: 0;
+}
+
+.infodiv {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+
+.videoDiv {
+    margin-bottom: 0;
+}
+
+.videoDiv iframe {
+    width: 80%;
+    height: 80%;
+}
+
+/* Footer */
+#footertext {
+    text-align: right;
+    margin-right: 2%;
+    font-size: 16px;
+}
+
+} /* media query desktop end */
+
+/* EXTRA Styling for desktopsizes */
+@media only screen and (min-width: 1300px) {
+    .videoDiv iframe {
+        max-width: 75%;
+        max-height: 75%;
+    }
+} /* media query extra desktop end */

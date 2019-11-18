@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Unicode karakterer accepteres på siden -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Fortæller browseren at den skal sætte sidens width til at følge enhedens skærmstørrelse. -->
+    <title>Index</title>
+   <link href="style.css" rel="stylesheet"> <!-- Reference til css-fil -->
+</head>
+<body id="grid-container">
+    <header id="grid-item-a">
+        <div>
+            <img id="headerimg"  alt="marvel" src="img/marvel_logo_illu.png"> <!-- vektorbaseret illustration (billede) -->
+        </div>
+    </header>
+
+    <section id="grid-item-b">
+     <nav class="sidepanel" id="mySidepanel">
+         <!-- Javascript:void(0) sørger for at vi ved klik på linket "x" ikke refresher siden.
+              Vi udfører blot vores tilknyttede funktion closeNav() ved onClick. -->
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <ul id="ul-nav-item">
+            </ul>
+        </nav>
+        <!-- Vi udfører vores tilknyttede funktion openNav() ved onClick. -->
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    </section>
+
+    <section id="grid-item-c" class="flex-container">
+        <!-- section c: element der indeholder: div => h1, p (årstal og alder), p (imdb rating), p (plot) samt div => iframe -->
+    </section>
+
+    <footer id="grid-item-d">
+        <p id="footertext">Marvel Studio Trailer Collection (This is a school-project and not an official Marvel site.)</p>
+    </footer>
+
+</body>
+<script src="movies.js"></script> <!-- Reference til js-fil -->
+</html>

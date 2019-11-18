@@ -1,0 +1,61 @@
+// Hele denne kode er smidt ind øverst i min JS-fil
+var jsonMovies = { //JavaScript variabel for vores film-liste
+  //JSON liste over vores film-objekter
+  "movie": [
+    {
+      // Et objekt
+      "Title": "Captain America - The First Avenger",
+      "YoutubeId": "s6V754RPnZc",
+      /**
+       * "Year": "2011",
+       * "imdbRating": "6.9",
+       * "Plot": "Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose of a 'Super-Soldier serum'. But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization."
+       */
+    },
+    {
+      "Title": "Captain Marvel",
+      "YoutubeId": "Z1BCujX3pw8",
+      /**
+       * "Year": "2019",
+       * "imdbRating": "7.0",
+       * "Plot": "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races."
+       */
+    },
+    {
+      "Title": "Iron Man",
+      "YoutubeId": "sTQZj2B5vNw",
+      /**
+       * "Year": "2008",
+       * "imdbRating": "7.9",
+       * "Plot": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil."
+       */
+    },
+    {
+      "Title": "Iron Man 2",
+      "YoutubeId": "BoohRoVA9WQ",
+      /**
+       * "Year": "2010",
+       * "imdbRating": "7.0",
+       * "Plot": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy."
+       */
+    },
+    {
+      "Title": "Thor",
+      "YoutubeId": "vJUDu40Z_RY",
+      /**
+       * "Year": "2011",
+       * "imdbRating": "7.0",
+       * "Plot": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders."
+       */
+    },
+    {
+      "Title": "The Incredible Hulk",
+      "YoutubeId": "xbqNb2PFKKA",
+      /**
+       * "Year": "2008",
+       * "imdbRating": "6.7",
+       * "Plot": "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he turns into, whenever he loses his temper."
+       */
+    }
+  ]
+}
