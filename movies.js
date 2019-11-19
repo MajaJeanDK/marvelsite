@@ -125,7 +125,7 @@ for (let i = 0; i < jsonMovies.movie.length; i++) {
             var d = new Date(); // variabel for nuværrende tidspunkt (år, dato, tid)
             var n = d.getFullYear(); // tager fat på årstallet vi finder ved variabel d.
             var np = n - parseInt(data.Year); // konverterer om til en int og laver udregningen: nuværrende årstal - filmens udgivelsesår.
-            pYear.innerText = n + " (" + np + " Years old.)";
+            pYear.innerText = data.Year + " (" + np + " Years old.)";
             pRating.innerText = "IMDB Rating: " + data.imdbRating;
             pPlot.innerText = data.Plot;
 

@@ -89,6 +89,7 @@
     font-size: 20px;
     color: beige;
     display: block;
+    font-family: 'Alatsi', sans-serif;
 }
 
 /* Nav links styling */
@@ -152,6 +153,14 @@ ul li {
 /* Vi skaber lidt luft imellem vores heading og p elementer */
 .title, .year, .rating, .description {
     margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Alatsi', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* position relative betyder at vi pladserer vores element relativt til dets normale pladsering.
