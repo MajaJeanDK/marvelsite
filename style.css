@@ -136,7 +136,7 @@ ul li {
 #grid-item-c {
     background-color: #FFFFFF;
     grid-area: c;
-    padding: 10%;
+    padding: 5% 10% 10%;
     overflow: auto;
     margin-left: -70px;
 }
