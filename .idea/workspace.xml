@@ -43,8 +43,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="Index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MovieSite/Index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/marvelsite/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="movies.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="movies.js" working-dir="$PROJECT_DIR$">
@@ -52,6 +55,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.Index.html" />
         <item itemvalue="Node.js.movies.js" />
       </list>
@@ -80,7 +84,7 @@
       <workItem from="1574082239869" duration="267000" />
       <workItem from="1574082539391" duration="734000" />
       <workItem from="1574090968999" duration="5492000" />
-      <workItem from="1574148416656" duration="7522000" />
+      <workItem from="1574148416656" duration="7830000" />
     </task>
     <servers />
   </component>
