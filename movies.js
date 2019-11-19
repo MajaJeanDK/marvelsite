@@ -139,6 +139,7 @@ for (let i = 0; i < jsonMovies.movie.length; i++) {
             // Vi tillader fullscreen for vores video (virker dog kun på desktop-størrelsen og ikke mobil).
             let videoEmbedIframe = document.createElement("iframe");
             videoEmbedIframe.setAttribute("src", youtube.generateEmbedUrl(movie.YoutubeId));
+            videoEmbedIframe.setAttribute("title", movie.Title);
             videoEmbedIframe.setAttribute("allowFullscreen", '');
 
             // kodedel for min navigations-menu
